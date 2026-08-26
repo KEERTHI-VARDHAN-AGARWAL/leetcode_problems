@@ -4,7 +4,7 @@ class Solution:
         # x=sign*x
         if x<0:
             return False
-        if str(x)==str(x)[::-1]:
+        elif str(x)==str(x)[::-1]:
             return True
         else:
             return False
