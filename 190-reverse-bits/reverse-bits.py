@@ -4,7 +4,6 @@ class Solution:
         while n>0:
             s=str(n%2)+s
             n//=2
-        while len(s)<32:
-            s='0'+s
+        s=s.zfill(32)
         s=s[::-1]
         return int(s,2)
